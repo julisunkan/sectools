@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NetSecToolkit"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".SplashActivity" android:exported="true" android:theme="@style/Theme.NetSecToolkit.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".SettingsActivity" android:exported="false"/>
+
+        <!-- Network Tools 1-10 -->
+        <activity android:name=".tools.NetworkScannerActivity" android:exported="false"/>
+        <activity android:name=".tools.WifiAnalyzerActivity" android:exported="false"/>
+        <activity android:name=".tools.IpLookupActivity" android:exported="false"/>
+        <activity android:name=".tools.PingActivity" android:exported="false"/>
+        <activity android:name=".tools.TracerouteActivity" android:exported="false"/>
+        <activity android:name=".tools.TcpPortScannerActivity" android:exported="false"/>
+        <activity android:name=".tools.UdpPortScannerActivity" android:exported="false"/>
+        <activity android:name=".tools.LanInventoryActivity" android:exported="false"/>
+        <activity android:name=".tools.MacVendorActivity" android:exported="false"/>
+        <activity android:name=".tools.ArpViewerActivity" android:exported="false"/>
+
+        <!-- DNS & Network 11-20 -->
+        <activity android:name=".tools.DnsLookupActivity" android:exported="false"/>
+        <activity android:name=".tools.ReverseDnsActivity" android:exported="false"/>
+        <activity android:name=".tools.IPv4CalcActivity" android:exported="false"/>
+        <activity android:name=".tools.IPv6CalcActivity" android:exported="false"/>
+        <activity android:name=".tools.CidrCalcActivity" android:exported="false"/>
+        <activity android:name=".tools.PacketCaptureActivity" android:exported="false"/>
+        <activity android:name=".tools.BandwidthMonitorActivity" android:exported="false"/>
+        <activity android:name=".tools.LatencyTrackerActivity" android:exported="false"/>
+        <activity android:name=".tools.NetworkInterfaceActivity" android:exported="false"/>
+        <activity android:name=".tools.GatewayDnsActivity" android:exported="false"/>
+
+        <!-- Web Inspector 21-30 -->
+        <activity android:name=".tools.HttpHeaderActivity" android:exported="false"/>
+        <activity android:name=".tools.HttpsCheckerActivity" android:exported="false"/>
+        <activity android:name=".tools.SslCertActivity" android:exported="false"/>
+        <activity android:name=".tools.CertExpiryActivity" android:exported="false"/>
+        <activity android:name=".tools.SecurityHeadersActivity" android:exported="false"/>
+        <activity android:name=".tools.CookieInspectorActivity" android:exported="false"/>
+        <activity android:name=".tools.JwtDecoderActivity" android:exported="false"/>
+        <activity android:name=".tools.JwtSignatureActivity" android:exported="false"/>
+        <activity android:name=".tools.Base64Activity" android:exported="false"/>
+        <activity android:name=".tools.UrlEncoderActivity" android:exported="false"/>
+
+        <!-- Web Tools 31-40 -->
+        <activity android:name=".tools.UrlParserActivity" android:exported="false"/>
+        <activity android:name=".tools.RobotsTxtActivity" android:exported="false"/>
+        <activity android:name=".tools.SitemapActivity" android:exported="false"/>
+        <activity android:name=".tools.CspCheckerActivity" android:exported="false"/>
+        <activity android:name=".tools.CorsInspectorActivity" android:exported="false"/>
+        <activity android:name=".tools.HttpStatusActivity" android:exported="false"/>
+        <activity android:name=".tools.RedirectCheckerActivity" android:exported="false"/>
+        <activity android:name=".tools.TechDetectorActivity" android:exported="false"/>
+        <activity android:name=".tools.HtmlViewerActivity" android:exported="false"/>
+        <activity android:name=".tools.WebFingerprintActivity" android:exported="false"/>
+
+        <!-- Password & Crypto 41-50 -->
+        <activity android:name=".tools.PasswordStrengthActivity" android:exported="false"/>
+        <activity android:name=".tools.PasswordGeneratorActivity" android:exported="false"/>
+        <activity android:name=".tools.PasswordEntropyActivity" android:exported="false"/>
+        <activity android:name=".tools.HashGeneratorActivity" android:exported="false"/>
+        <activity android:name=".tools.HashIdentifierActivity" android:exported="false"/>
+        <activity android:name=".tools.ChecksumVerifierActivity" android:exported="false"/>
+        <activity android:name=".tools.AesEncryptorActivity" android:exported="false"/>
+        <activity android:name=".tools.AesDecryptorActivity" android:exported="false"/>
+        <activity android:name=".tools.SecureNotesActivity" android:exported="false"/>
+        <activity android:name=".tools.PasswordVaultActivity" android:exported="false"/>
+
+        <!-- Encryption Suite 51-60 -->
+        <activity android:name=".tools.OtpBackupActivity" android:exported="false"/>
+        <activity android:name=".tools.RsaKeyGenActivity" android:exported="false"/>
+        <activity android:name=".tools.RsaEncryptionActivity" android:exported="false"/>
+        <activity android:name=".tools.DigitalSignatureActivity" android:exported="false"/>
+        <activity android:name=".tools.FileIntegrityActivity" android:exported="false"/>
+        <activity android:name=".tools.TextEncryptionActivity" android:exported="false"/>
+        <activity android:name=".tools.QrSecretActivity" android:exported="false"/>
+        <activity android:name=".tools.CryptoLearningActivity" android:exported="false"/>
+        <activity android:name=".tools.SecureRandomActivity" android:exported="false"/>
+        <activity android:name=".tools.HashCompareActivity" android:exported="false"/>
+
+        <!-- OSINT & Recon 61-70 -->
+        <activity android:name=".tools.WhoisActivity" android:exported="false"/>
+        <activity android:name=".tools.RdapActivity" android:exported="false"/>
+        <activity android:name=".tools.DomainInfoActivity" android:exported="false"/>
+        <activity android:name=".tools.DnsRecordActivity" android:exported="false"/>
+        <activity android:name=".tools.CertTransparencyActivity" android:exported="false"/>
+        <activity android:name=".tools.SubdomainEnumActivity" android:exported="false"/>
+        <activity android:name=".tools.AsnLookupActivity" android:exported="false"/>
+        <activity android:name=".tools.GeoIpActivity" android:exported="false"/>
+        <activity android:name=".tools.ReverseIpActivity" android:exported="false"/>
+        <activity android:name=".tools.IpReputationActivity" android:exported="false"/>
+
+        <!-- Reputation & OSINT 71-80 -->
+        <activity android:name=".tools.DomainReputationActivity" android:exported="false"/>
+        <activity android:name=".tools.EmailBreachActivity" android:exported="false"/>
+        <activity android:name=".tools.UsernameSearchActivity" android:exported="false"/>
+        <activity android:name=".tools.DnsComparisonActivity" android:exported="false"/>
+        <activity android:name=".tools.DomainExpiryActivity" android:exported="false"/>
+        <activity android:name=".tools.ScreenshotOrganizerActivity" android:exported="false"/>
+        <activity android:name=".tools.PassiveReconActivity" android:exported="false"/>
+        <activity android:name=".tools.DnsPropagationActivity" android:exported="false"/>
+        <activity android:name=".tools.EmailHeaderActivity" android:exported="false"/>
+        <activity android:name=".tools.MetadataInspectorActivity" android:exported="false"/>
+
+        <!-- Vulnerability Intel 81-90 -->
+        <activity android:name=".tools.CveSearchActivity" android:exported="false"/>
+        <activity android:name=".tools.CvssCalcActivity" android:exported="false"/>
+        <activity android:name=".tools.NvdBrowserActivity" android:exported="false"/>
+        <activity android:name=".tools.CisaKevActivity" android:exported="false"/>
+        <activity android:name=".tools.VulnNotesActivity" android:exported="false"/>
+        <activity android:name=".tools.PatchTrackerActivity" android:exported="false"/>
+        <activity android:name=".tools.SecurityBulletinActivity" android:exported="false"/>
+        <activity android:name=".tools.ExploitReferenceActivity" android:exported="false"/>
+        <activity android:name=".tools.SoftwareInventoryActivity" android:exported="false"/>
+        <activity android:name=".tools.AssetRiskActivity" android:exported="false"/>
+
+        <!-- Security Management 91-100 -->
+        <activity android:name=".tools.IncidentChecklistActivity" android:exported="false"/>
+        <activity android:name=".tools.SecurityAuditActivity" android:exported="false"/>
+        <activity android:name=".tools.FirewallRulesActivity" android:exported="false"/>
+        <activity android:name=".tools.DeviceInventoryActivity" android:exported="false"/>
+        <activity android:name=".tools.NetworkDocsActivity" android:exported="false"/>
+        <activity android:name=".tools.LogViewerActivity" android:exported="false"/>
+        <activity android:name=".tools.IocManagerActivity" android:exported="false"/>
+        <activity android:name=".tools.ThreatFeedActivity" android:exported="false"/>
+        <activity android:name=".tools.CyberQuizActivity" android:exported="false"/>
+        <activity android:name=".tools.CyberToolkitActivity" android:exported="false"/>
+
+    </application>
+</manifest>

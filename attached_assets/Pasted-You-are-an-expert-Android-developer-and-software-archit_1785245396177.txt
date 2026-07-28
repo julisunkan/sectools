@@ -1,0 +1,959 @@
+You are an expert Android developer and software architect.
+
+Build a complete native Android application named "Pet Care Tracker" using Java and SQLite only (no Firebase or cloud database).
+
+The application must be production-quality, well-structured, modular, responsive, and follow Android development best practices.
+
+====================================================
+PROJECT DETAILS
+====================================================
+
+Project Name:
+Pet Care Tracker
+
+Platform:
+Android
+
+Programming Language:
+Java
+
+Database:
+SQLite
+
+IDE Compatibility:
+Android Studio (latest stable)
+
+Minimum SDK:
+API 24 (Android 7.0)
+
+Target SDK:
+Latest Stable SDK
+
+Architecture:
+MVC with clean separation of concerns
+
+Design:
+Material Design 3
+
+Navigation:
+Navigation Drawer
+
+Theme:
+Light
+Dark
+Blue
+Green
+Purple
+Follow System
+
+Offline:
+100% Offline
+
+====================================================
+GENERAL REQUIREMENTS
+====================================================
+
+The app must:
+
+• Use SQLite for all data.
+• Use RecyclerView throughout.
+• Use CardView for lists.
+• Use Material Design components.
+• Follow Material Design guidelines.
+• Use Floating Action Buttons where appropriate.
+• Use Bottom Sheets for quick actions.
+• Use DatePicker dialogs.
+• Use TimePicker dialogs.
+• Use SharedPreferences for settings.
+• Store images locally.
+• Follow object-oriented programming principles.
+• Have proper validation.
+• Display Toasts/Snackbars.
+• Prevent duplicate entries where appropriate.
+• Handle screen rotation gracefully.
+• Include comments throughout the code.
+• Separate Activities, Adapters, Models, Utilities, and Database classes.
+• Use proper Java naming conventions.
+
+====================================================
+MAIN MODULES
+====================================================
+
+1. Dashboard
+
+Display:
+
+• Total Pets
+• Upcoming Vaccinations
+• Today's Feedings
+• Upcoming Vet Appointments
+• Grooming Due
+• Deworming Due
+• Medication Due
+• Water Intake Today
+• Exercise Today
+• Recent Medical Records
+
+Include quick action cards.
+
+====================================================
+
+2. Pet Management
+
+CRUD Operations
+
+Fields
+
+Pet ID
+Name
+Species
+Breed
+Gender
+DOB
+Age (calculated)
+Weight
+Height
+Color
+Owner Name
+Phone
+Email
+Address
+Microchip Number
+Profile Photo
+
+Features
+
+• Add pet
+• Edit pet
+• Delete pet
+• View profile
+• Upload photo
+• Capture photo (optional)
+• Multiple photos
+• Gallery
+
+====================================================
+
+3. Vaccination Module
+
+CRUD
+
+Fields
+
+Vaccine Name
+Vaccination Date
+Next Due Date
+Veterinarian
+Clinic
+Batch Number
+Notes
+
+Features
+
+Vaccination History
+
+Upcoming Vaccinations
+
+Reminders
+
+====================================================
+
+4. Feeding Schedule
+
+CRUD
+
+Fields
+
+Food Name
+
+Food Type
+
+Quantity
+
+Time
+
+Frequency
+
+Reminder
+
+Notes
+
+====================================================
+
+5. Medication Tracker
+
+CRUD
+
+Fields
+
+Medicine
+
+Dosage
+
+Frequency
+
+Start Date
+
+End Date
+
+Reminder
+
+Notes
+
+Medication History
+
+====================================================
+
+6. Veterinary Appointments
+
+CRUD
+
+Fields
+
+Vet Name
+
+Clinic
+
+Phone
+
+Appointment Date
+
+Time
+
+Reason
+
+Cost
+
+Notes
+
+Reminder
+
+====================================================
+
+7. Medical History
+
+CRUD
+
+Fields
+
+Diagnosis
+
+Symptoms
+
+Treatment
+
+Medication
+
+Prescription
+
+Lab Results
+
+Veterinarian
+
+Visit Date
+
+Notes
+
+====================================================
+
+8. Deworming Schedule
+
+CRUD
+
+Medicine
+
+Date Given
+
+Next Due
+
+Reminder
+
+Notes
+
+====================================================
+
+9. Grooming Schedule
+
+CRUD
+
+Bathing
+
+Hair Trim
+
+Nail Trim
+
+Ear Cleaning
+
+Teeth Brushing
+
+Date
+
+Next Due
+
+Reminder
+
+Notes
+
+====================================================
+
+10. Weight Tracker
+
+Store
+
+Weight
+
+Height
+
+BMI (if applicable)
+
+Date
+
+Notes
+
+Display weight history.
+
+====================================================
+
+11. Exercise Tracker
+
+Store
+
+Walk
+
+Run
+
+Play
+
+Distance
+
+Duration
+
+Calories Burned (Estimated)
+
+====================================================
+
+12. Water Intake
+
+Store
+
+Daily Goal
+
+Amount Drank
+
+Reminder
+
+Progress
+
+====================================================
+
+13. Daily Health Check
+
+Store
+
+Mood
+
+Appetite
+
+Energy
+
+Sleep
+
+Water Intake
+
+Stool Condition
+
+Vomiting
+
+Temperature
+
+Notes
+
+====================================================
+
+14. Allergy Records
+
+Store
+
+Allergy Type
+
+Food
+
+Medicine
+
+Environment
+
+Severity
+
+Notes
+
+====================================================
+
+15. Emergency Contacts
+
+Store
+
+Vet
+
+Emergency Clinic
+
+Pet Sitter
+
+Groomer
+
+Owner Contact
+
+====================================================
+
+16. Insurance
+
+Store
+
+Provider
+
+Policy Number
+
+Coverage
+
+Expiry
+
+Phone
+
+====================================================
+
+17. Adoption
+
+Store
+
+Shelter
+
+Adoption Date
+
+Previous Owner
+
+Rescue Details
+
+Notes
+
+====================================================
+
+18. Breed Information
+
+Store
+
+Breed
+
+Average Lifespan
+
+Temperament
+
+Exercise Needs
+
+Diet
+
+Health Concerns
+
+====================================================
+
+19. Notes & Journal
+
+Daily notes
+
+Training notes
+
+Behavior
+
+Recovery
+
+Milestones
+
+====================================================
+
+20. Photo Gallery
+
+Store multiple pet photos.
+
+Allow:
+
+Add
+
+Delete
+
+View Fullscreen
+
+====================================================
+
+21. Documents
+
+Store
+
+Medical Reports
+
+Vaccination Card
+
+Insurance
+
+Prescription
+
+Certificates
+
+====================================================
+
+22. Calendar
+
+Calendar View showing
+
+Appointments
+
+Vaccinations
+
+Medication
+
+Feeding
+
+Grooming
+
+Deworming
+
+====================================================
+
+23. Search
+
+Search pets by
+
+Name
+
+Breed
+
+Species
+
+Owner
+
+Filter records by date and category.
+
+====================================================
+
+24. Statistics Dashboard
+
+Charts
+
+Total Pets
+
+Vaccinations
+
+Appointments
+
+Weight Trend
+
+Medication Compliance
+
+Feeding Statistics
+
+Exercise Statistics
+
+====================================================
+
+25. Smart Reminder System
+
+Use AlarmManager.
+
+Notify for
+
+Vaccination
+
+Medication
+
+Feeding
+
+Water
+
+Vet Appointment
+
+Grooming
+
+Deworming
+
+Exercise
+
+====================================================
+
+26. Export
+
+Export selected pet or all pets.
+
+Formats
+
+PDF
+
+CSV
+
+Include
+
+Photo
+
+Medical History
+
+Vaccinations
+
+Appointments
+
+Weight
+
+Feeding
+
+Medication
+
+Notes
+
+====================================================
+
+27. Backup & Restore
+
+Backup SQLite database.
+
+Restore database.
+
+Backup Images.
+
+Restore Images.
+
+====================================================
+
+28. Theme Settings
+
+Themes
+
+Light
+
+Dark
+
+Blue
+
+Green
+
+Purple
+
+Follow System
+
+Store using SharedPreferences.
+
+====================================================
+
+29. Pet Age Calculator
+
+Automatically calculate
+
+Years
+
+Months
+
+Days
+
+====================================================
+
+30. Lost Pet
+
+Store
+
+Last Seen Date
+
+Location
+
+Reward
+
+Description
+
+Photo
+
+====================================================
+
+31. QR Code Generator
+
+Generate QR Code containing
+
+Pet ID
+
+Name
+
+Owner
+
+Phone
+
+Medical Alerts
+
+====================================================
+SQLITE DATABASE
+====================================================
+
+Create separate tables with foreign keys.
+
+Tables:
+
+Pets
+
+Vaccinations
+
+FeedingSchedules
+
+Medications
+
+VetAppointments
+
+MedicalHistory
+
+Deworming
+
+Grooming
+
+WeightHistory
+
+Exercise
+
+WaterIntake
+
+DailyHealth
+
+Allergies
+
+EmergencyContacts
+
+Insurance
+
+Adoption
+
+BreedInfo
+
+Notes
+
+Photos
+
+Documents
+
+LostPet
+
+Settings
+
+====================================================
+FOLDER STRUCTURE
+====================================================
+
+com.petcaretracker
+
+activities
+
+fragments
+
+models
+
+database
+
+adapters
+
+receivers
+
+helpers
+
+utilities
+
+notifications
+
+pdf
+
+backup
+
+themes
+
+constants
+
+interfaces
+
+====================================================
+NOTIFICATIONS
+====================================================
+
+Implement
+
+AlarmManager
+
+BroadcastReceiver
+
+Notification Channels
+
+PendingIntent
+
+Repeating reminders
+
+Custom reminder time
+
+====================================================
+PDF EXPORT
+====================================================
+
+Generate beautiful PDF reports.
+
+Include
+
+Pet Photo
+
+Tables
+
+Headers
+
+Footer
+
+Page Numbers
+
+====================================================
+CSV EXPORT
+====================================================
+
+Export all SQLite tables into CSV files.
+
+====================================================
+SEARCH
+====================================================
+
+Realtime SearchView.
+
+====================================================
+IMAGE STORAGE
+====================================================
+
+Store images in internal storage.
+
+Save URI in SQLite.
+
+====================================================
+SETTINGS
+====================================================
+
+Theme
+
+Notification Toggle
+
+Reminder Time
+
+Backup
+
+Restore
+
+About
+
+Privacy Policy
+
+====================================================
+ABOUT PAGE
+====================================================
+
+App Name
+
+Version
+
+Developer
+
+Copyright
+
+====================================================
+ERROR HANDLING
+====================================================
+
+Prevent crashes.
+
+Handle null values.
+
+Validate all forms.
+
+Handle missing images.
+
+====================================================
+UI REQUIREMENTS
+====================================================
+
+Use
+
+Material Toolbar
+
+Navigation Drawer
+
+Floating Action Button
+
+RecyclerView
+
+CardView
+
+Material Buttons
+
+Material TextInputLayout
+
+Material Dialogs
+
+Material Date Picker
+
+Material Time Picker
+
+Progress Indicators
+
+Empty State Screens
+
+Confirmation Dialogs
+
+====================================================
+CODE REQUIREMENTS
+====================================================
+
+Generate complete code.
+
+Do not leave TODOs.
+
+Create every Activity.
+
+Create every Adapter.
+
+Create every XML Layout.
+
+Create all SQLite CRUD methods.
+
+Create Model classes.
+
+Create DatabaseHelper.
+
+Create NotificationHelper.
+
+Create PDF Export Helper.
+
+Create Backup Helper.
+
+Create Theme Manager.
+
+Create Utilities.
+
+Comment all major methods.
+
+====================================================
+DELIVERABLES
+====================================================
+
+Generate the project incrementally.
+
+Phase 1:
+Project setup and architecture.
+
+Phase 2:
+SQLite Database and Models.
+
+Phase 3:
+Pet Management.
+
+Phase 4:
+Vaccinations.
+
+Phase 5:
+Feeding.
+
+Continue implementing each module one at a time until all features are complete.
+
+After each phase:
+• Ensure the project compiles successfully.
+• Fix any errors before proceeding.
+• Explain what was added.
+• Provide the complete code for new and modified files only.
+• Maintain consistent code style and avoid duplicate logic.

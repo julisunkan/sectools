@@ -1,0 +1,105 @@
+Build an android java app with the following menu/features/buttons use SQLITE for storage, and allow users to configure ALL APIs from settings. Give detail instruction for user to configure each API and use each menu/function. Make the User Interface very colorful and attractive.
+
+
+| # |  Menu | SQLite Usage | Optional Free API |
+|---|----------|--------------|-------------------|
+| 1 | Local Network Scanner | Save discovered hosts | None |
+| 2 | Wi-Fi Security Analyzer | Store scan history | None |
+| 3 | IP Address Lookup | Cache IP lookups | ip-api.com |
+| 4 | Ping Utility | Ping history | None |
+| 5 | Traceroute Utility | Route logs | None |
+| 6 | TCP Port Scanner | Port scan results | None |
+| 7 | UDP Port Scanner | Scan history | None |
+| 8 | LAN Device Inventory | Device database | None |
+| 9 | MAC Address Vendor Lookup | Vendor cache | macvendors.com |
+| 10 | ARP Table Viewer | Saved ARP entries | None |
+| 11 | DNS Lookup Tool | DNS cache | Google DNS over HTTPS |
+| 12 | Reverse DNS Lookup | Query history | Google DNS over HTTPS |
+| 13 | IPv4 Calculator | Saved calculations | None |
+| 14 | IPv6 Calculator | Saved calculations | None |
+| 15 | CIDR/Subnet Calculator | Saved networks | None |
+| 16 | Packet Capture Log Viewer | PCAP metadata | None |
+| 17 | Bandwidth Usage Monitor | Usage logs | None |
+| 18 | Latency History Tracker | Ping history | None |
+| 19 | Network Interface Information | Interface profiles | None |
+| 20 | Gateway & DNS Inspector | Network snapshots | None |
+| 21 | HTTP Header Inspector | Header history | None |
+| 22 | HTTPS Security Checker | Scan history | Mozilla Observatory |
+| 23 | SSL Certificate Viewer | Certificate cache | None |
+| 24 | Certificate Expiry Monitor | Expiry reminders | None |
+| 25 | Security Headers Analyzer | Website reports | Mozilla Observatory |
+| 26 | Cookie Inspector | Cookie database | None |
+| 27 | JWT Decoder | Token history | None |
+| 28 | JWT Signature Checker | Saved tokens | None |
+| 29 | Base64 Encoder/Decoder | Conversion history | None |
+| 30 | URL Encoder/Decoder | History | None |
+| 31 | URL Parser | Parsed URLs | None |
+| 32 | robots.txt Viewer | Cached robots.txt | None |
+| 33 | sitemap.xml Analyzer | Sitemap cache | None |
+| 34 | CSP Header Checker | Policy history | None |
+| 35 | CORS Header Inspector | Header history | None |
+| 36 | HTTP Status Code Tester | Test logs | None |
+| 37 | Website Redirect Checker | Redirect history | None |
+| 38 | Website Technology Detector | Detection history | Wappalyzer Community API |
+| 39 | HTML Source Viewer | Saved pages | None |
+| 40 | Web Fingerprinting Tool | Fingerprint database | BuiltWith (limited) |
+| 41 | Password Strength Checker | Analysis history | None |
+| 42 | Password Generator | Saved passwords | None |
+| 43 | Password Entropy Calculator | Results history | None |
+| 44 | Hash Generator | Hash history | None |
+| 45 | Hash Identifier | Identified hashes | None |
+| 46 | Checksum Verifier | File checksums | None |
+| 47 | AES File Encryptor | Encrypted file index | None |
+| 48 | AES File Decryptor | Decryption logs | None |
+| 49 | Secure Notes Vault | Encrypted SQLite | None |
+| 50 | Encrypted Password Manager | Password vault | None |
+| 51 | OTP Secret Backup | Encrypted secrets | None |
+| 52 | RSA Key Generator | Key metadata | None |
+| 53 | RSA Encryption Demo | Demo history | None |
+| 54 | Digital Signature Demo | Signature records | None |
+| 55 | File Integrity Checker | Integrity history | VirusTotal |
+| 56 | Text Encryption Utility | Encryption history | None |
+| 57 | QR Secret Storage | QR database | None |
+| 58 | Cryptography Learning App | Lessons & scores | None |
+| 59 | Secure Random Generator | Generated history | None |
+| 60 | Hash Comparison Tool | Comparison logs | None |
+| 61 | WHOIS Lookup | Domain cache | RDAP |
+| 62 | RDAP Client | Query history | RDAP |
+| 63 | Domain Information Viewer | Domain database | RDAP |
+| 64 | DNS Record Viewer | DNS cache | Google DNS API |
+| 65 | Certificate Transparency Search | Search history | crt.sh |
+| 66 | Passive Subdomain Enumerator | Subdomain cache | crt.sh |
+| 67 | ASN Lookup | ASN cache | ipinfo.io |
+| 68 | GeoIP Lookup | IP history | ip-api.com |
+| 69 | Reverse IP Lookup | Lookup history | HackerTarget |
+| 70 | IP Reputation Checker | Reputation cache | AbuseIPDB |
+| 71 | Domain Reputation Checker | Reputation history | VirusTotal |
+| 72 | Email Breach Checker | Search history | Have I Been Pwned |
+| 73 | Username Search Manager | Search database | None |
+| 74 | Public DNS Comparison | Benchmark history | None |
+| 75 | Domain Expiration Tracker | Domain reminders | RDAP |
+| 76 | Website Screenshot Organizer | Screenshot index | ScreenshotOne Free Tier |
+| 77 | Passive Recon Dashboard | Recon reports | Multiple APIs |
+| 78 | DNS Propagation Checker | Results cache | DNS Checker APIs |
+| 79 | Email Header Analyzer | Header database | None |
+| 80 | Metadata Inspector | Metadata cache | None |
+| 81 | CVE Search App | CVE database | NVD API |
+| 82 | CVSS Score Calculator | Saved calculations | NVD API |
+| 83 | NVD Vulnerability Browser | Vulnerability cache | NVD API |
+| 84 | CISA KEV Browser | KEV cache | CISA KEV |
+| 85 | Vulnerability Notes Manager | Notes database | NVD API |
+| 86 | Patch Tracking Tool | Patch records | Microsoft MSRC RSS |
+| 87 | Security Bulletin Reader | Bulletin cache | CISA RSS |
+| 88 | Exploit Reference Organizer | Reference database | Exploit-DB RSS |
+| 89 | Software Version Inventory | Installed software | None |
+| 90 | Asset Risk Tracker | Asset database | NVD API |
+| 91 | Incident Response Checklist | Checklist database | None |
+| 92 | Security Audit Checklist | Audit history | None |
+| 93 | Firewall Rule Organizer | Firewall rules | None |
+| 94 | Device Inventory Manager | Device database | None |
+| 95 | Network Documentation Tool | Documentation | None |
+| 96 | Log File Viewer | Log archive | None |
+| 97 | IOC Manager | IOC database | AlienVault OTX |
+| 98 | Threat Intelligence Feed Reader | Feed cache | AlienVault OTX |
+| 99 | Cybersecurity Quiz App | Questions & scores | MITRE ATT&CK |
+| 100 | All-in-One Cybersecurity Toolkit | Tool history, settings, favorites | VirusTotal, AbuseIPDB, NVD, CISA KEV, ip-api |

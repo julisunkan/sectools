@@ -1,0 +1,145 @@
+Executing tasks: [:app:assembleRelease] in project C:\Users\Julius\Desktop\batt5
+
+AGPBI: {"kind":"warning","text":"We recommend using a newer Android Gradle plugin to use compileSdk = 34\n\nThis Android Gradle plugin (8.1.0) was tested up to compileSdk = 33 (and compileSdkPreview = \"UpsideDownCakePrivacySandbox\").\n\nYou are strongly encouraged to update your project to use a newer\nAndroid Gradle plugin that has been tested with compileSdk = 34.\n\nIf you are already using the latest version of the Android Gradle plugin,\nyou may need to wait until a newer version with support for compileSdk = 34 is available.\n\nTo suppress this warning, add/update\n    android.suppressUnsupportedCompileSdk=34\nto this project's gradle.properties.","sources":[{}]}
+> Task :app:createReleaseVariantModel
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:generateReleaseBuildConfig
+> Task :app:javaPreCompileRelease
+> Task :app:parseReleaseLocalResources
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:checkReleaseAarMetadata
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs NO-SOURCE
+> Task :app:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeReleaseResources
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:processReleaseManifestForPackage
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeExtDexRelease
+> Task :app:processReleaseResources
+
+> Task :app:compileReleaseJavaWithJavac
+Note: C:\Users\Julius\Desktop\batt5\app\src\main\java\com\batteryhealthmonitor\activities\MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-gradle/31.1.0/lint-gradle-31.1.0.pom, took 1 s 273 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint/31.1.0/lint-31.1.0.pom, took 519 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/external/com-intellij/intellij-core/31.1.0/intellij-core-31.1.0.pom, took 535 ms
+Download https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/3.0.10/groovy-3.0.10.pom, took 615 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-api/31.1.0/lint-api-31.1.0.pom, took 189 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-checks/31.1.0/lint-checks-31.1.0.pom, took 200 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/play-sdk-proto/31.1.0/play-sdk-proto-31.1.0.pom, took 197 ms
+Download https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.pom, took 171 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-gradle/31.1.0/lint-gradle-31.1.0.jar, took 487 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/play-sdk-proto/31.1.0/play-sdk-proto-31.1.0.jar, took 600 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint/31.1.0/lint-31.1.0.jar, took 1 s 950 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-api/31.1.0/lint-api-31.1.0.jar, took 2 s 183 ms
+Download https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar, took 1 s 561 ms
+Download https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, took 1 s 63 ms
+Download https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/3.0.10/groovy-3.0.10.jar, took 3 s 886 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/external/org-jetbrains/uast/31.1.0/uast-31.1.0.jar, took 4 s 911 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/lint/lint-checks/31.1.0/lint-checks-31.1.0.jar, took 9 s 281 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/external/com-intellij/intellij-core/31.1.0/intellij-core-31.1.0.jar, took 15 s 935 ms
+Download https://dl.google.com/dl/android/maven2/com/android/tools/external/com-intellij/kotlin-compiler/31.1.0/kotlin-compiler-31.1.0.jar, took 23 s 945 ms
+
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:dexBuilderRelease
+> Task :app:mergeReleaseGlobalSynthetics
+> Task :app:optimizeReleaseResources
+> Task :app:mergeDexRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:lintVitalReportRelease
+
+> Task :app:lintVitalRelease FAILED
+C:\Users\Julius\Desktop\batt5\app\src\main\res\xml\backup_rules.xml:6: Error: battery_health_monitor.db is not in an included path [FullBackupContent]
+    <exclude domain="database" path="battery_health_monitor.db" />
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Julius\Desktop\batt5\app\src\main\res\xml\data_extraction_rules.xml:5: Error: battery_health_monitor.db is not in an included path [FullBackupContent]
+        <exclude domain="database" path="battery_health_monitor.db" />
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "FullBackupContent":
+   Ensures that <data-extraction-rules> and <full-backup-content> files, which
+   configure backup options, are valid.
+
+   https://android-developers.googleblog.com/2015/07/auto-backup-for-apps-made-simple.html
+
+C:\Users\Julius\Desktop\batt5\app\src\main\AndroidManifest.xml:27: Error: Remove androidx.work.WorkManagerInitializer from your AndroidManifest.xml when using on-demand initialization. [RemoveWorkManagerInitializer from androidx.work]
+    <application
+    ^
+
+   Explanation for issues of type "RemoveWorkManagerInitializer":
+   If an android.app.Application implements
+   androidx.work.Configuration.Provider,
+   the default androidx.startup.InitializationProvider needs to be removed
+   from the
+   AndroidManifest.xml file.
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.work
+   Feedback: https://issuetracker.google.com/issues/new?component=409906
+
+3 errors, 0 warnings
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintVitalRelease'.
+> Lint found fatal errors while assembling a release target.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 3 errors, 0 warnings. First failure:
+  
+  C:\Users\Julius\Desktop\batt5\app\src\main\res\xml\backup_rules.xml:6: Error: battery_health_monitor.db is not in an included path [FullBackupContent]
+      <exclude domain="database" path="battery_health_monitor.db" />
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  The full lint text report is located at:
+    C:\Users\Julius\Desktop\batt5\app\build\intermediates\lint_vital_intermediate_text_report\release\lint-results-release.txt
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 33s
+43 actionable tasks: 43 executed

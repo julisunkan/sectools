@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_dark"
+            app:titleTextColor="@color/white"
+            app:title="API Settings"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Configure API keys for tools that require external services. All keys are stored locally on your device."
+                android:textColor="#90A4AE"
+                android:textSize="13sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- ip-api.com -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_ip_api"/>
+            <!-- macvendors -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_macvendors"/>
+            <!-- VirusTotal -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_virustotal"/>
+            <!-- AbuseIPDB -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_abuseipdb"/>
+            <!-- HIBP -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_hibp"/>
+            <!-- ipinfo.io -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_ipinfo"/>
+            <!-- HackerTarget -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_hackertarget"/>
+            <!-- NVD -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_nvd"/>
+            <!-- AlienVault OTX -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_otx"/>
+            <!-- ScreenshotOne -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_screenshotone"/>
+            <!-- Wappalyzer -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_wappalyzer"/>
+            <!-- BuiltWith -->
+            <include layout="@layout/item_setting_api"
+                android:id="@+id/setting_builtwith"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save_settings"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="Save All Settings"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                app:backgroundTint="@color/accent"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

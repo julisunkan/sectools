@@ -1,0 +1,1090 @@
+# Comprehensive Replit Development Prompt: Battery Health Monitor (Android)
+
+You are an expert Android software engineer, UI/UX designer, software architect, QA engineer, and performance optimization specialist.
+
+Develop a **production-quality Android application** named **Battery Health Monitor** using **Java**, **SQLite**, and the official **Android BatteryManager API**. The application should be cleanly architected, scalable, well-documented, and compatible with nearly all Android devices while gracefully handling manufacturer-specific API limitations.
+
+---
+
+# General Requirements
+
+## Application Name
+
+Battery Health Monitor
+
+## Programming Language
+
+Java
+
+## Database
+
+SQLite (using SQLiteOpenHelper)
+
+## Minimum SDK
+
+Android 8.0 (API 26)
+
+## Target SDK
+
+Latest stable Android SDK
+
+## Architecture
+
+Use MVVM architecture.
+
+Separate the project into:
+
+* Activities
+* Fragments
+* Services
+* Broadcast Receivers
+* Database
+* Repository
+* ViewModels
+* Utilities
+* Models
+* Adapters
+* Notifications
+* Charts
+* Helpers
+
+Follow SOLID principles.
+
+Avoid memory leaks.
+
+Use background threads where appropriate.
+
+Handle lifecycle correctly.
+
+---
+
+# UI Requirements
+
+Design a premium, modern Material Design 3 interface.
+
+Support:
+
+* Light theme
+* Dark theme
+* AMOLED Black theme
+* Material You colors (Android 12+)
+* Dynamic colors
+* Responsive layouts
+* Tablets
+* Foldable devices
+* Landscape mode
+* Portrait mode
+
+Animations should be smooth.
+
+Include skeleton loading screens.
+
+Use cards, charts, gauges, progress rings, and interactive graphs.
+
+---
+
+# Main Navigation
+
+Bottom Navigation
+
+* Dashboard
+* Statistics
+* History
+* Reports
+* Settings
+
+Navigation Drawer
+
+* Device Information
+* Battery Benchmark
+* Charger Analyzer
+* Battery Calendar
+* Export Data
+* Help
+* Privacy Policy
+* About
+
+---
+
+# Dashboard
+
+Display in real time:
+
+Battery Level
+
+Battery Percentage
+
+Battery Health Score
+
+Charging Status
+
+Charging Type
+
+Charging Speed
+
+Charging Current
+
+Discharging Current
+
+Voltage
+
+Temperature
+
+Battery Technology
+
+Estimated Remaining Time
+
+Battery Capacity (if available)
+
+Estimated Capacity
+
+Estimated Battery Wear
+
+Estimated Battery Age
+
+Charge Cycles (when available)
+
+Power Consumption
+
+Screen-On Battery Drain
+
+Idle Battery Drain
+
+Battery Efficiency Score
+
+Battery Lifespan Prediction
+
+Today's Charging Sessions
+
+Today's Battery Usage
+
+Current Battery Trend
+
+---
+
+# Battery Health Engine
+
+Develop an intelligent estimation algorithm.
+
+Use:
+
+Temperature
+
+Charge Cycles
+
+Charging Habits
+
+Voltage Stability
+
+Battery Capacity
+
+Average Charging Current
+
+Average Discharging Current
+
+Battery Age
+
+Historical Data
+
+Generate:
+
+Health %
+
+Excellent
+
+Good
+
+Average
+
+Poor
+
+Critical
+
+Estimate:
+
+Original Capacity
+
+Current Capacity
+
+Capacity Loss
+
+Battery Wear
+
+Battery Aging
+
+Expected Remaining Lifespan
+
+Confidence score for every estimate (for example, High, Medium, Low), since Android devices expose different levels of battery information.
+
+Clearly label estimated values so users understand they are not manufacturer-reported diagnostics.
+
+---
+
+# Charging Monitor
+
+While charging:
+
+Display
+
+Charging Current
+
+Charging Voltage
+
+Charging Wattage
+
+Charging Efficiency
+
+Charging Speed
+
+Estimated Time Until Full
+
+Temperature
+
+Current Trend
+
+Voltage Trend
+
+Power Graph
+
+Current Graph
+
+Temperature Graph
+
+Detect
+
+USB
+
+USB-C
+
+AC
+
+Wireless
+
+Reverse Wireless
+
+Fast Charging
+
+Super Fast Charging
+
+Adaptive Charging
+
+PD Charging
+
+QC Charging
+
+Detect unsupported charging modes gracefully if the platform does not expose them.
+
+---
+
+# Charger Analyzer
+
+Analyze charger quality.
+
+Display
+
+Estimated Wattage
+
+Average Current
+
+Voltage
+
+Charging Stability
+
+Efficiency
+
+Charging Rating
+
+Cable Quality Estimation
+
+Poor
+
+Average
+
+Good
+
+Excellent
+
+Detect slow chargers.
+
+Warn users about unstable charging.
+
+Do not claim hardware capabilities that cannot be verified.
+
+---
+
+# Discharging Monitor
+
+Display
+
+Current Drain
+
+Battery Drain Per Hour
+
+Power Consumption
+
+Estimated Remaining Time
+
+Idle Drain
+
+Screen-On Drain
+
+Heavy Usage Detection
+
+Background Drain Detection
+
+Drain Trend
+
+Graph battery drain over time.
+
+---
+
+# Battery Usage Analysis
+
+Track
+
+Morning
+
+Afternoon
+
+Evening
+
+Night
+
+Daily
+
+Weekly
+
+Monthly
+
+Display
+
+Average Battery Level
+
+Average Drain
+
+Average Temperature
+
+Average Charging Speed
+
+Most Active Hours
+
+Average Usage Time
+
+Average Idle Time
+
+---
+
+# Application Battery Usage
+
+Request Usage Access permission.
+
+Show battery consumption by application where Android allows it.
+
+Display
+
+Application
+
+Foreground Usage
+
+Background Usage
+
+Estimated Battery Consumption
+
+Most Power Hungry Apps
+
+If unavailable due to Android version restrictions, explain this to the user.
+
+---
+
+# Battery Timeline
+
+Create a timeline.
+
+Example
+
+Battery Plugged
+
+Charging Started
+
+Fast Charging Activated
+
+Battery Full
+
+Unplugged
+
+Temperature Increased
+
+Heavy Drain Started
+
+Battery Warning
+
+Battery Saver Enabled
+
+---
+
+# Charging Session History
+
+Store
+
+Start Time
+
+End Time
+
+Duration
+
+Average Current
+
+Average Voltage
+
+Average Temperature
+
+Charge Added
+
+Estimated Efficiency
+
+Charging Speed
+
+Display previous sessions.
+
+---
+
+# Battery Calendar
+
+Display every day.
+
+Each date contains
+
+Average Battery
+
+Average Temperature
+
+Charge Count
+
+Health Score
+
+Drain Rate
+
+Screen Time
+
+Tap a day to view details.
+
+---
+
+# Battery Cycle Counter
+
+Estimate charge cycles.
+
+Display
+
+Today's Cycles
+
+Weekly
+
+Monthly
+
+Lifetime Estimate
+
+Explain that values are estimated when the operating system does not expose actual cycle counts.
+
+---
+
+# Temperature Monitor
+
+Display
+
+Current Temperature
+
+Maximum Today
+
+Minimum Today
+
+Weekly Average
+
+Monthly Average
+
+Graph temperature history.
+
+Warn above configurable thresholds.
+
+---
+
+# Battery Stress Analyzer
+
+Detect
+
+Gaming
+
+Video Recording
+
+Navigation
+
+Camera
+
+Video Streaming
+
+Charging While Gaming
+
+Measure
+
+Drain
+
+Temperature
+
+Performance
+
+Show battery stress score.
+
+---
+
+# Overnight Charging Detection
+
+Detect
+
+Charging Entire Night
+
+Long Charging Sessions
+
+Repeated Overnight Charging
+
+Offer educational recommendations rather than alarmist messages.
+
+---
+
+# Battery Benchmark
+
+Allow benchmark tests.
+
+Measure
+
+100% to 90%
+
+100% to 80%
+
+100% to 50%
+
+Display
+
+Average Drain
+
+Average Current
+
+Battery Score
+
+Efficiency Score
+
+Compare with previous benchmarks.
+
+---
+
+# AI Battery Advisor
+
+Analyze user habits.
+
+Generate recommendations.
+
+Examples
+
+Reduce overnight charging.
+
+Avoid extreme temperatures.
+
+Charge between preferred ranges if desired.
+
+Replace charger if charging is unusually unstable.
+
+Detect unusual battery behavior.
+
+Avoid making unsupported medical- or safety-style claims.
+
+---
+
+# Smart Notifications
+
+Battery Full
+
+Battery Below User Threshold
+
+Battery Above User Threshold
+
+Charging Started
+
+Charging Completed
+
+High Temperature
+
+Low Temperature
+
+Slow Charging
+
+Fast Charging
+
+Heavy Battery Drain
+
+Health Score Changed
+
+Unusual Battery Usage
+
+Notification customization.
+
+Custom sounds.
+
+Vibration.
+
+Quiet hours.
+
+---
+
+# Battery Widget
+
+Provide home screen widgets.
+
+Small
+
+Medium
+
+Large
+
+Circular
+
+Minimal
+
+Interactive refresh.
+
+---
+
+# Persistent Notification
+
+Optional foreground service notification.
+
+Show
+
+Battery %
+
+Current
+
+Temperature
+
+Charging Speed
+
+Remaining Time
+
+---
+
+# Reports
+
+Daily
+
+Weekly
+
+Monthly
+
+Yearly
+
+Display
+
+Average Health
+
+Average Temperature
+
+Drain Rate
+
+Charge Count
+
+Average Charging Speed
+
+Battery Score
+
+Export
+
+CSV
+
+PDF
+
+JSON
+
+---
+
+# Charts
+
+Interactive charts.
+
+Battery %
+
+Temperature
+
+Voltage
+
+Current
+
+Power
+
+Charging Speed
+
+Discharging Speed
+
+Health Score
+
+Charge Cycles
+
+Drain
+
+Allow pinch zoom.
+
+Allow time filtering.
+
+---
+
+# Device Information
+
+Display
+
+Manufacturer
+
+Model
+
+Android Version
+
+API Level
+
+Kernel Version
+
+Security Patch
+
+RAM
+
+Storage
+
+CPU
+
+Battery Technology
+
+Battery Capacity
+
+Screen Resolution
+
+Refresh Rate
+
+---
+
+# Device Comparison
+
+Compare user statistics against anonymized averages for the same model (optional online feature).
+
+Display
+
+Battery Health
+
+Charging Speed
+
+Temperature
+
+Battery Drain
+
+Show percentile rankings where data is available.
+
+---
+
+# Battery Achievements
+
+Gamification.
+
+Examples
+
+Healthy Charging
+
+Cool Battery
+
+No Overnight Charging
+
+Low Temperature Week
+
+Efficient Battery User
+
+Provide optional badges only.
+
+---
+
+# Backup
+
+Local Backup
+
+Restore
+
+Cloud Backup (optional)
+
+Automatic backup scheduling.
+
+---
+
+# Search
+
+Search battery history.
+
+Search reports.
+
+Search charging sessions.
+
+---
+
+# Settings
+
+Sampling interval
+
+Theme
+
+Notification settings
+
+Export preferences
+
+Widget preferences
+
+Charging threshold
+
+Temperature threshold
+
+Language
+
+Units
+
+Privacy settings
+
+Data retention period
+
+---
+
+# Database Design
+
+Create SQLite tables.
+
+battery_logs
+
+charging_sessions
+
+daily_statistics
+
+battery_reports
+
+battery_health
+
+temperature_history
+
+battery_cycles
+
+settings
+
+notifications
+
+benchmark_results
+
+usage_history
+
+app_usage
+
+battery_events
+
+---
+
+# Background Monitoring
+
+Use
+
+Foreground Service
+
+BroadcastReceiver
+
+WorkManager
+
+AlarmManager where appropriate
+
+Efficient scheduling.
+
+Minimal battery usage.
+
+Respect Doze Mode.
+
+---
+
+# Android APIs
+
+Use
+
+BatteryManager
+
+ACTION_BATTERY_CHANGED
+
+UsageStatsManager
+
+PowerManager
+
+NotificationManager
+
+AlarmManager
+
+WorkManager
+
+Foreground Services
+
+Do not use hidden or private Android APIs.
+
+---
+
+# Device Compatibility
+
+Support
+
+Samsung
+
+Google Pixel
+
+Xiaomi
+
+OnePlus
+
+Oppo
+
+Vivo
+
+Realme
+
+Motorola
+
+Nokia
+
+Sony
+
+Huawei (where Google APIs are available)
+
+Honor
+
+Gracefully handle unsupported BatteryManager properties.
+
+Never crash if data is unavailable.
+
+Show "Not Available" instead of invalid values.
+
+Detect manufacturer differences.
+
+---
+
+# Performance
+
+Database indexing.
+
+Caching.
+
+Efficient queries.
+
+Memory optimization.
+
+Avoid battery drain.
+
+Background monitoring must consume minimal resources.
+
+---
+
+# Privacy
+
+All battery history remains local by default.
+
+No user tracking.
+
+No unnecessary permissions.
+
+Optional analytics must require explicit user consent.
+
+Provide a clear privacy policy.
+
+---
+
+# Accessibility
+
+Large fonts.
+
+TalkBack support.
+
+High contrast mode.
+
+Color-blind friendly charts.
+
+Keyboard accessibility where applicable.
+
+---
+
+# Error Handling
+
+Handle
+
+Permission denied
+
+Unsupported APIs
+
+Battery property unavailable
+
+Database corruption
+
+Background service termination
+
+Configuration changes
+
+Unexpected device behavior
+
+Provide informative messages instead of crashes.
+
+---
+
+# Testing
+
+Test across:
+
+Android 8–latest
+
+Samsung
+
+Google Pixel
+
+Xiaomi
+
+Motorola
+
+OnePlus
+
+Different battery capacities
+
+Charging methods
+
+Dark mode
+
+Landscape
+
+Low-memory devices
+
+---
+
+# Deliverables
+
+Generate a complete Android Studio project including:
+
+* Full Java source code
+* SQLite database implementation
+* XML layouts
+* Material Design UI
+* ViewModels
+* Repository layer
+* Broadcast Receivers
+* Foreground Service
+* WorkManager tasks
+* Notification system
+* Widgets
+* Charts
+* Battery monitoring engine
+* Battery health estimation engine
+* Benchmark module
+* Reports module
+* Export module
+* Settings module
+* Complete comments and documentation
+* README with setup instructions
+* Unit tests for core logic
+* Instrumentation tests for key UI flows
+
+The generated project should compile without errors, follow Android best practices, and use only documented Android APIs. Where Android does not expose certain battery information (such as true battery health on most devices), clearly identify values as estimates and implement graceful fallbacks so the app behaves consistently across manufacturers, including Samsung devices.
