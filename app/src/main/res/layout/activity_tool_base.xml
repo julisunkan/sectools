@@ -166,48 +166,75 @@
                             android:textIsSelectable="true"/>
                     </ScrollView>
 
+                    <!-- Action buttons row -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="12dp">
+                        android:layout_marginTop="16dp"
+                        android:weightSum="3">
+
+                        <!-- Copy — cyan -->
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btn_copy"
                             android:layout_width="0dp"
-                            android:layout_height="36dp"
+                            android:layout_height="44dp"
                             android:layout_weight="1"
-                            android:layout_marginEnd="4dp"
+                            android:layout_marginEnd="5dp"
                             android:text="Copy"
                             android:textAllCaps="false"
                             android:textSize="13sp"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            app:strokeColor="@color/accent"
-                            app:cornerRadius="6dp"/>
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:backgroundTint="#00BCD4"
+                            app:cornerRadius="10dp"
+                            app:icon="@drawable/ic_copy"
+                            app:iconTint="@color/black"
+                            app:iconGravity="textStart"
+                            app:iconPadding="4dp"
+                            app:elevation="3dp"/>
+
+                        <!-- Share — violet -->
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btn_share"
                             android:layout_width="0dp"
-                            android:layout_height="36dp"
+                            android:layout_height="44dp"
                             android:layout_weight="1"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
                             android:text="Share"
                             android:textAllCaps="false"
                             android:textSize="13sp"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            app:strokeColor="@color/accent"
-                            app:cornerRadius="6dp"/>
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="#7C4DFF"
+                            app:cornerRadius="10dp"
+                            app:icon="@drawable/ic_share"
+                            app:iconTint="@color/white"
+                            app:iconGravity="textStart"
+                            app:iconPadding="4dp"
+                            app:elevation="3dp"/>
+
+                        <!-- Save — green -->
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btn_save_history"
                             android:layout_width="0dp"
-                            android:layout_height="36dp"
+                            android:layout_height="44dp"
                             android:layout_weight="1"
-                            android:layout_marginStart="4dp"
+                            android:layout_marginStart="5dp"
                             android:text="Save"
                             android:textAllCaps="false"
                             android:textSize="13sp"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            app:strokeColor="@color/success"
-                            app:cornerRadius="6dp"/>
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:backgroundTint="#00E676"
+                            app:cornerRadius="10dp"
+                            app:icon="@drawable/ic_save"
+                            app:iconTint="@color/black"
+                            app:iconGravity="textStart"
+                            app:iconPadding="4dp"
+                            app:elevation="3dp"/>
+
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -245,12 +272,20 @@
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btn_clear_history"
                             android:layout_width="wrap_content"
-                            android:layout_height="32dp"
-                            android:text="Clear"
+                            android:layout_height="36dp"
+                            android:text="Clear All"
                             android:textAllCaps="false"
                             android:textSize="12sp"
-                            style="@style/Widget.MaterialComponents.Button.TextButton"
-                            android:textColor="@color/error"/>
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:backgroundTint="#FF5252"
+                            app:cornerRadius="8dp"
+                            app:icon="@drawable/ic_delete"
+                            app:iconTint="@color/white"
+                            app:iconGravity="textStart"
+                            app:iconPadding="3dp"
+                            app:iconSize="16dp"
+                            app:elevation="2dp"/>
                     </LinearLayout>
 
                     <androidx.recyclerview.widget.RecyclerView

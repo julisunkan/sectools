@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -127,10 +128,7 @@ public abstract class BaseToolActivity extends AppCompatActivity {
         rvHistory.setLayoutManager(new LinearLayoutManager(this));
         historyAdapter = new HistoryAdapter(this, item -> showResult(item.query, item.result));
         rvHistory.setAdapter(historyAdapter);
-        btnClearHistory.setOnClickListener(v -> {
-            db.clearHistory(getToolId());
-            loadHistory();
-        });
+        btnClearHistory.setOnClickListener(v -> confirmClearHistory());
 
         loadHistory();
     }
@@ -206,7 +204,25 @@ public abstract class BaseToolActivity extends AppCompatActivity {
         if (result.isEmpty() || result.equals("Running...")) return;
         db.saveHistory(getToolId(), query, result);
         loadHistory();
-        Toast.makeText(this, "Saved!", Toast.LENGTH_SHORT).show();
+        btnSave.setEnabled(false);
+        btnSave.setText("Saved ✓");
+        btnSave.postDelayed(() -> {
+            btnSave.setEnabled(true);
+            btnSave.setText("Save");
+        }, 1500);
+    }
+
+    private void confirmClearHistory() {
+        new AlertDialog.Builder(this)
+            .setTitle("Clear History")
+            .setMessage("Delete all saved history for this tool?")
+            .setPositiveButton("Clear All", (d, w) -> {
+                db.clearHistory(getToolId());
+                loadHistory();
+                Toast.makeText(this, "History cleared", Toast.LENGTH_SHORT).show();
+            })
+            .setNegativeButton("Cancel", null)
+            .show();
     }
 
     protected void loadHistory() {
