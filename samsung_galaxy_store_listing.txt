@@ -1,0 +1,175 @@
+================================================================
+NETSEC TOOLKIT - SAMSUNG GALAXY STORE LISTING
+================================================================
+
+
+----------------------------------------------------------------
+APP TITLE
+----------------------------------------------------------------
+NetSec Toolkit - 100 Security Tools
+
+
+----------------------------------------------------------------
+SHORT DESCRIPTION (max 80 characters)
+----------------------------------------------------------------
+100 cybersecurity tools for network scanning, encryption, OSINT and more.
+
+
+----------------------------------------------------------------
+FULL DESCRIPTION
+----------------------------------------------------------------
+NetSec Toolkit is the most complete mobile cybersecurity companion available on Android. Designed for security professionals, ethical hackers, IT administrators, students, and privacy-conscious users, it puts 100 fully functional security tools into one clean, fast, offline-capable app.
+
+Whether you are auditing your home network, analyzing SSL certificates, cracking open a suspicious JWT token, searching CVE databases, or managing your encrypted passwords, NetSec Toolkit has the tool for the job. No ads. No subscriptions. No root required.
+
+NETWORK TOOLS
+
+1. Scan your local network and discover every connected device with IP and MAC addresses.
+2. Analyze nearby Wi-Fi networks for security weaknesses, encryption standards, and signal strength.
+3. Look up any IP address for geolocation, ISP, and ASN data.
+4. Run ping tests to check host reachability and measure latency.
+5. Trace the full route of your packets across the internet hop by hop.
+6. Scan TCP and UDP ports to identify open services on any host.
+7. View your ARP table and monitor active devices on your LAN.
+8. Identify the manufacturer of any device by its MAC address.
+9. Monitor bandwidth usage and track network latency history over time.
+10. Inspect network interface details and gateway/DNS configuration.
+
+DNS AND NETWORK INFORMATION
+
+11. Perform forward and reverse DNS lookups instantly.
+12. Calculate IPv4 and IPv6 subnets, broadcast addresses, and host ranges.
+13. Compute CIDR notation and subnet masks with a dedicated calculator.
+14. View live packet capture logs from your device.
+15. Compare DNS resolver responses across multiple public DNS servers.
+16. Check DNS propagation status from multiple global vantage points.
+
+WEB INSPECTOR AND WEB TOOLS
+
+17. Inspect full HTTP response headers from any URL.
+18. Verify HTTPS configuration, redirects, and TLS status.
+19. View SSL certificate details including issuer, validity, and fingerprint.
+20. Monitor certificate expiry dates before they become a problem.
+21. Analyze security headers such as HSTS, CSP, X-Frame-Options, and more.
+22. Inspect cookies, CORS policies, and Content Security Policy headers.
+23. Decode and inspect JWT tokens and verify their signatures.
+24. Encode and decode Base64 and URL-encoded strings.
+25. Parse URLs into their individual components.
+26. Fetch and analyze robots.txt and sitemap.xml files.
+27. Check HTTP status codes and follow redirect chains.
+28. Detect web technologies and frameworks used by any website.
+29. View raw HTML source and fingerprint web server software.
+
+PASSWORD AND HASHING
+
+30. Check password strength with entropy scoring and improvement suggestions.
+31. Generate cryptographically strong random passwords with full customization.
+32. Calculate password entropy to understand true security level.
+33. Generate MD5, SHA-1, SHA-256, SHA-512, and other hashes instantly.
+34. Identify unknown hash types from a hash string.
+35. Verify file checksums to confirm integrity.
+36. Encrypt and decrypt files using AES-256.
+37. Store private notes securely with AES encryption.
+38. Manage your passwords in a fully encrypted local vault.
+
+ENCRYPTION SUITE
+
+39. Back up OTP secrets with QR code display and manual entry.
+40. Generate RSA key pairs of varying sizes for use in other tools or systems.
+41. Demonstrate RSA encryption and decryption with your own keys.
+42. Create and verify digital signatures using RSA.
+43. Verify file integrity with hash-based checksums.
+44. Encrypt and decrypt arbitrary text with AES-256.
+45. Store secrets inside QR codes for secure physical backup.
+46. Learn core cryptography concepts through an interactive reference.
+47. Generate cryptographically secure random values in multiple formats.
+48. Compare two hashes side by side to verify equality.
+
+OSINT AND RECON
+
+49. Run WHOIS and RDAP queries against any domain or IP.
+50. Retrieve full DNS records including A, AAAA, MX, TXT, NS, and CNAME.
+51. Search Certificate Transparency logs to find subdomains and certificates.
+52. Enumerate subdomains passively using public data sources.
+53. Look up ASN information for any network prefix.
+54. Geolocate IP addresses with ISP and region data.
+55. Perform reverse IP lookups to find other domains on the same host.
+56. Check IP reputation against abuse databases.
+
+REPUTATION AND BREACH
+
+57. Check domain reputation against threat intelligence feeds.
+58. Search for email addresses in known data breach databases.
+59. Search for usernames across platforms.
+60. Track domain expiration dates and ownership changes.
+61. Analyze email headers to trace origin and routing.
+62. Extract and inspect metadata from documents and images.
+63. Run passive reconnaissance and aggregate OSINT data for a target.
+
+VULNERABILITY INTELLIGENCE
+
+64. Search the NVD for CVEs by keyword, product, or CVE ID.
+65. Calculate CVSS v3 scores for custom vulnerability assessments.
+66. Browse the CISA Known Exploited Vulnerabilities catalog.
+67. Read the latest security bulletins and advisories.
+68. Organize exploit references and track patch status.
+69. Maintain a software version inventory for vulnerability tracking.
+70. Assign and track risk scores for assets in your environment.
+
+SECURITY MANAGEMENT
+
+71. Use an incident response checklist aligned with standard IR phases.
+72. Run security audit checklists for systems and applications.
+73. Document and organize firewall rules in a structured local database.
+74. Maintain a full device inventory with risk ratings.
+75. Write and store network documentation locally.
+76. View and filter logs from your device.
+77. Manage indicators of compromise (IOCs) with search and tagging.
+78. Monitor threat intelligence feeds from AlienVault OTX and other sources.
+79. Test your cybersecurity knowledge with a 30-question interactive quiz across 8 categories.
+80. Access the all-in-one cybersecurity dashboard for a unified operational view.
+
+PRIVACY AND DESIGN
+
+NetSec Toolkit stores all data locally in an encrypted SQLite database. There is no account, no cloud sync, no telemetry, and no background data collection of any kind. The app works fully offline for all tools that do not require external API calls. Optional API integrations with services such as VirusTotal, AbuseIPDB, Have I Been Pwned, and AlienVault OTX can be configured in Settings using your own API keys. The app uses a dark cybersecurity-themed interface optimized for readability and extended professional use sessions.
+
+
+----------------------------------------------------------------
+FEATURES (for feature list field in store, numbered, no bullets)
+----------------------------------------------------------------
+1. 100 fully functional cybersecurity tools in one app
+2. Network scanner that discovers all devices on your LAN
+3. TCP and UDP port scanner with fast multi-threaded scanning
+4. DNS lookup, reverse DNS, and DNS record viewer
+5. SSL and TLS certificate inspector with expiry monitoring
+6. JWT decoder and signature verifier
+7. AES-256 file and text encryption and decryption
+8. RSA key generation, encryption, and digital signature tools
+9. Password strength checker, generator, and encrypted vault
+10. WHOIS, RDAP, and domain information lookups
+11. Certificate Transparency log search and subdomain enumeration
+12. CVE search and CVSS calculator with NVD and CISA KEV integration
+13. Email breach checker and IP reputation lookup
+14. IOC manager with threat intelligence feed integration
+15. Incident response and security audit checklists
+16. Wi-Fi security analyzer with encryption detection
+17. Fully offline capable for all local tools
+18. No root required
+19. No ads, no subscriptions, no account required
+20. All data stored locally on device with no telemetry
+21. Dark cybersecurity themed Material Design 3 interface
+22. History logging for every tool with search and export
+23. Optional API key integration for 12 external security services
+24. Works on Android 7.0 and above
+25. Cybersecurity quiz with 30 questions across 8 knowledge categories
+
+
+----------------------------------------------------------------
+KEYWORDS
+----------------------------------------------------------------
+cybersecurity, network scanner, port scanner, ethical hacking, penetration testing, security tools, network security, DNS lookup, SSL checker, JWT decoder, AES encryption, RSA encryption, password manager, OSINT, WHOIS lookup, CVE search, vulnerability scanner, IP lookup, Wi-Fi analyzer, network tools, hacking tools, security audit, firewall, packet capture, hash generator, cryptography, privacy tools, digital forensics, IOC manager, threat intelligence, AbuseIPDB, VirusTotal, Have I Been Pwned, subdomain enumeration, certificate transparency, CVSS calculator, CISA KEV, incident response, security checklist, LAN scanner, MAC address lookup, traceroute, ping tool, CIDR calculator, HTTP headers, security headers, CORS checker, CSP checker, Base64, URL encoder, robots.txt, sitemap, redirect checker, tech detector, checksum verifier, secure notes, OTP backup, QR code, digital signature, file integrity, password entropy, password generator, reverse IP, GeoIP, ASN lookup, email header analyzer, metadata inspector, passive recon, exploit reference, patch tracker, software inventory, asset risk, device inventory, network documentation, log viewer, cyber quiz, dark theme, offline security, Android security, no root, no ads, privacy
+
+
+================================================================
+END OF LISTING
+================================================================
