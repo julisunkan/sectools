@@ -1,4 +1,4 @@
-# Pet Care Tracker ProGuard Rules
--keep class com.petcaretracker.models.** { *; }
+# NetSec Toolkit ProGuard Rules
+-keep class com.netsec.toolkit.** { *; }
 -keep class com.journeyapps.barcodescanner.** { *; }
 -keep class com.google.zxing.** { *; }

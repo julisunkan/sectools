@@ -5,30 +5,34 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Paw print icon for Pet Care Tracker -->
-
-    <!-- Main pad -->
+    <!-- Shield outline -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M54,42 C46,42 40,50 40,58 C40,66 46,72 54,72 C62,72 68,66 68,58 C68,50 62,42 54,42 Z" />
+        android:fillColor="#00BCD4"
+        android:pathData="M54,18 L28,30 L28,54 C28,69.5 39.5,84 54,90 C68.5,84 80,69.5 80,54 L80,30 Z" />
 
-    <!-- Top-left toe -->
+    <!-- Shield inner highlight -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M38,30 C34,30 31,34 31,38 C31,42 34,45 38,45 C42,45 45,42 45,38 C45,34 42,30 38,30 Z" />
+        android:fillColor="#0D1454"
+        android:pathData="M54,26 L34,36 L34,54 C34,66.5 42.8,78.2 54,83.5 C65.2,78.2 74,66.5 74,54 L74,36 Z" />
 
-    <!-- Top-right toe -->
+    <!-- Lock body -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M70,30 C66,30 63,34 63,38 C63,42 66,45 70,45 C74,45 77,42 77,38 C77,34 74,30 70,30 Z" />
+        android:fillColor="#00BCD4"
+        android:pathData="M44,52 L44,66 L64,66 L64,52 Z"
+        android:strokeColor="#00BCD4"
+        android:strokeWidth="1" />
 
-    <!-- Left toe -->
+    <!-- Lock shackle -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M29,44 C25,44 22,48 22,52 C22,56 25,59 29,59 C33,59 36,56 36,52 C36,48 33,44 29,44 Z" />
+        android:fillColor="#00000000"
+        android:pathData="M46,52 L46,46 C46,40.5 62,40.5 62,46 L62,52"
+        android:strokeColor="#00BCD4"
+        android:strokeWidth="4"
+        android:strokeLineCap="round" />
 
-    <!-- Right toe -->
+    <!-- Lock keyhole -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M79,44 C75,44 72,48 72,52 C72,56 75,59 79,59 C83,59 86,56 86,52 C86,48 83,44 79,44 Z" />
+        android:fillColor="#0D1454"
+        android:pathData="M54,55 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 M53,58 L55,58 L55,63 L53,63 Z" />
+
 </vector>
