@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
+import com.google.android.material.button.MaterialButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
@@ -24,7 +24,7 @@ public class CyberQuizActivity extends AppCompatActivity {
 
     private TextView tvScore, tvProgress, tvCategory, tvQuestion;
     private ProgressBar progressQuiz;
-    private Button[] answerButtons;
+    private MaterialButton[] answerButtons;
     private int currentQ = 0, score = 0;
     private List<Q> questions;
 
@@ -53,7 +53,7 @@ public class CyberQuizActivity extends AppCompatActivity {
         tvCategory    = findViewById(R.id.tv_category_badge);
         tvQuestion    = findViewById(R.id.tv_question);
         progressQuiz  = findViewById(R.id.progress_quiz);
-        answerButtons = new Button[]{
+        answerButtons = new MaterialButton[]{
             findViewById(R.id.btn_a), findViewById(R.id.btn_b),
             findViewById(R.id.btn_c), findViewById(R.id.btn_d)
         };
@@ -93,7 +93,7 @@ public class CyberQuizActivity extends AppCompatActivity {
     }
 
     private void handleAnswer(int chosen, boolean isCorrect, List<String> opts, String correct) {
-        for (Button btn : answerButtons) btn.setEnabled(false);
+        for (MaterialButton btn : answerButtons) btn.setEnabled(false);
         if (isCorrect) {
             score++;
             answerButtons[chosen].setStrokeColor(
